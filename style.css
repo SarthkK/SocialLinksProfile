@@ -1,2 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    background-color: antiquewhite;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
