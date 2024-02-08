@@ -1,10 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
 
-.body{
-    font-family: 'Inter', sans-serif;
+:root {
+    --primary-color: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+body{
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
     margin: 0;
     padding: 0;
-    
+    background-color: var(--Off-Black);
+    font-size: 14px;
 }
 
 .container {
@@ -15,10 +28,12 @@
 }
 
 .card{
-    padding: 20px;
+    color: var(--White);
     width: fit-content;
     height: fit-content;
-    background-color: antiquewhite;
+    background-color: var(--Dark-Grey);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .profile{
@@ -28,10 +43,46 @@
 }
 
 .profile img{
+    padding: 15px 0px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 
+.profile .name {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile .location {
+    color: var(--primary-color);
+}
+
+.work{
+    margin: 0px;
+    padding: 0px;
+}
+
+.work .status {
+    color: #bbb;
+}
+
+.work ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.work ul li{
+    background-color: var(--Grey);
+    width: 80%;
+    list-style-type: none;    
+    margin: 5px auto;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
