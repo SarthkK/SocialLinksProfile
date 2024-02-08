@@ -29,7 +29,7 @@ body{
 
 .card{
     color: var(--White);
-    width: fit-content;
+    width: 350px;
     height: fit-content;
     background-color: var(--Dark-Grey);
     padding: 20px;
@@ -43,20 +43,22 @@ body{
 }
 
 .profile img{
-    padding: 15px 0px;
-    width: 70px;
-    height: 70px;
+    padding: 30px 0px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
 .profile .name {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
 }
 
 .profile .location {
     color: var(--primary-color);
+    margin: 10px;
+    font-weight: 500;
 }
 
 .work{
@@ -66,6 +68,8 @@ body{
 
 .work .status {
     color: #bbb;
+    text-align: center;
+    margin: 10px 0px;
 }
 
 .work ul {
@@ -78,11 +82,15 @@ body{
     background-color: var(--Grey);
     width: 80%;
     list-style-type: none;    
-    margin: 5px auto;
+    margin: 7px auto;
     text-align: center;
     font-weight: 400;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.work ul li:hover {
+    background-color: var(--primary-color);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
